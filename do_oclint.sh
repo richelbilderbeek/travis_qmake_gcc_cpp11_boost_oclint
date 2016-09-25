@@ -3,8 +3,7 @@
 # Clean main should work
 ./oclint-0.10.3/bin/oclint -o oclint.log \
   -disable-rule ShortVariableName \
-  main.cpp  main_test.cpp  my_functions.cpp  my_functions_test.cpp \
-  my_functions.h \
+  main.cpp \
   -- -std=c++11
 
 cat oclint.log
