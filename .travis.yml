@@ -13,5 +13,7 @@ addons:
     packages: libboost-all-dev
 
 script: 
-  - ./build.sh
-  - ./do_oclint
+  - qmake
+  - make 
+  - ./travis_qmake_gcc_cpp11_boost_oclint
+  - ./do_oclint.sh
